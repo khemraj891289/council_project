@@ -1,0 +1,337 @@
+/* YOUR CUSTOM STYLES */
+@media(max-width: 768px) {
+    .intro{
+        display: none;
+    }
+}
+.intro1{
+        display: none;
+    }
+#myprj{
+  margin-top: 75px;
+  padding-top: 15px;
+  overflow: hidden;
+  background-color: #f1f1f1;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: -5px;
+  padding-bottom: 25px;
+}
+.myHeader12{
+  background-color: #fff;
+  position: absolute;
+  z-index: 10000;
+}
+.container1{
+  float: right;
+}
+@media (min-width:768px){
+  .nav-item {
+    float: left;
+    border-radius: 20px!important;
+    margin-left: 3px!important;
+}
+}
+.nav-item>a:hover{
+  color: rgb(255, 255, 255)!important;
+}
+
+.navbar{
+  height: 65px;
+  z-index: 10000;
+}
+@media (max-width:768px){
+  .navbar{
+  height: 60px;
+  z-index: 10000;
+}
+  .navbar-right{
+   padding-top: 0px;
+}
+.container1>.collapse>ul{
+  padding: 6px;
+}
+}
+
+/*homestyle */
+#carousel-example-1{
+   width:85%;
+   margin: auto;
+   margin-top: 5px;
+}
+.news{
+  width: 100%;
+  margin: auto;
+}
+#homestyles .card-header{
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+@media (max-width:768px){
+   #carousel-example-1{
+   width: 95%;
+   margin: auto;
+   margin-top: 5px;
+}
+}
+/*sports style*/
+#sportsstyles img{
+   width:100%;
+}
+#sportsstyles{
+   width: 100%;
+   margin: auto;
+}
+#sportsstyles .popover1 {
+  width: 90%;
+  position: absolute;
+  z-index: 5000;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+#sportsstyles .modal-content {
+    border: 4px solid #1b5e20!important;
+}
+#sportsstyles>ul>li>div>a{
+  background-color: rgba(144, 108, 140, 0.97);
+  padding: 3px;
+}
+@media (min-width:1200px){
+   #sportsstyles .popover1{
+    width: 1050px;
+    position: absolute;
+    z-index: 5000;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+}
+@media (max-width:450px){
+   #sportsstyles .popover1{
+    width: 100%;
+    position: absolute;
+    z-index: 5000;
+    margin: auto;
+}
+}
+
+
+/*event style*/
+#eventstyles img{
+   width:100%;
+}
+#eventstyles{
+   width: 100%;
+   margin: auto;
+}
+#eventstyles .popover1 {
+  width: 90%;
+  position: absolute;
+  z-index: 5000;
+  margin-right: 5%;
+  margin-left: 5%;
+}
+#eventstyles .modal-content {
+    border: 4px solid #0d47a1!important;
+}
+#eventstyles>ul>li>div>a{
+  background-color: rgba(144, 108, 140, 0.97);
+  padding: 3px;
+}
+@media (min-width:1200px){
+   #eventstyles .popover1{
+    width: 1050px;
+    position: absolute;
+    z-index: 5000;
+    margin-left: 75px;
+    margin-right: 75px;
+}
+}
+
+/*contact style */
+ #contactus{
+   width: 100%;
+ }
+ #contactus>.divider-new{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    text-decoration: underline;
+}
+#contactus .testimonial-card{
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+#contactus .card-up{
+   height: 8em;
+}
+#contactus .avatar>img {
+    border: 5px solid #fff;
+    background: #FFF;
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -25%;
+}
+#contactus .flow-text{
+    font-size: 1em;
+    font-weight: 500;
+}
+#contactus .h5-responsive{
+    font-weight: 700;
+    font-size: 1.3em;
+}
+@media (max-width:576px){
+#contactus .testimonial-card{
+    width: 100%!important;
+    margin: auto;
+    position: relative;
+    background-color: #fff;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+}
+
+/*awards style*/
+#awardstyle{
+   width: 80%;
+   margin:auto;
+   margin-top: 10px;
+}
+#awardstyle .card-header{
+  color: rgb(255, 255, 255);
+  font-size: 1.3em;
+  font-weight: 600;
+}
+@media (max-width:576px){
+#awardstyle{
+   width: 100%;
+   margin:0px;
+}
+}
+
+/*clubs style*/
+#clubstyle{
+   width: 80%;
+   margin:auto;
+   margin-top: 5px;
+}
+#clubstyle .card-content{
+  text-align: left;
+}
+#clubstyle .card-header{
+  color: rgb(255, 255, 255);
+  font-size: 1.5em;
+  font-weight: 800;
+}
+@media (max-width:576px){
+#clubstyle{
+   width: 100%;
+   margin:0px;
+}
+}
+
+/*gallery style*/
+
+#gallerystyle img{
+   width:100%;
+}
+
+@media (max-width:476px){
+#gallerystyle a{
+   width: 150px!important;
+   padding: 7px!important;
+   margin: 3px!important;
+}
+}
+#gallerystyle{
+   width: 100%;
+   margin: auto;
+   text-align: center;
+}
+#gallerystyle a{
+  width:170px;
+  padding: 10px;
+  background-color: #fff;
+}
+#gallerystyle li{
+  display: initial;
+}
+#gallerystyle .hm-zoom:hover{
+  border-radius: 50%;
+}
+
+/*subgallery styles*/
+#subgallerystyle img{
+   width:100%;
+}
+#subgallerystyle{
+   width: 100%;
+   margin: auto;
+}
+#subgallerystyle .popover1 {
+  width: 50%;
+  position: absolute;
+  z-index: 5000;
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-top: -80px;
+}
+#subgallerystyle .modal-content {
+    border: 4px solid pink!important;
+}
+#subgallerystyle .modal-header{
+  padding: 10px;
+}
+#subgallerystyle .galleryimage{
+  padding: 3px!important;
+}
+
+#subgallerystyle .card-header{
+  color: rgb(255, 255, 255);
+  font-size: 2.4em;
+  font-weight: 700;
+  height: 80px;
+  padding-left: 5%;
+}
+@media (max-width:576px){
+#subgallerystyle .popover1 {
+  width: 98%;
+  position: absolute;
+  z-index: 5000;
+  margin-right: 1%;
+  margin-left: 1%;
+}
+}
+@media screen and (max-width: 850px) and (min-width: 576px){
+#subgallerystyle .popover1 {
+  width: 80%;
+  position: absolute;
+  z-index: 5000;
+  margin-right: 10%;
+  margin-left: 10%;
+}
+}
+@media (min-width:1200px){
+   #subgallerystyle .popover1{
+    width: 700px;
+    position: absolute;
+    z-index: 5000;
+    margin-left: 250px;
+    margin-right: 250px;
+}
+}
+
+/* for input*/
+input{
+    width:80% !important;
+    margin-left: 2%!important;
+}
+textarea{
+    width:93% !important;
+}

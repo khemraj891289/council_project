@@ -1,0 +1,1945 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mainApp">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Games and sports council IITK</title>
+  <link rel="shortcut icon" type="image/x-icon" href="images/logo.png" />
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <!-- Material Design Bootstrap -->
+  <link href="css/mdb.min.css" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular-route.min.js"></script>
+  <!-- Your custom styles (optional) -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+  <script src="http://www.bootstrapcdn.com/twitter-bootstrap/2.2.1/js/bootstrap.min.js"></script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $(".myHeader").click(function(){
+                $(".container1").addClass("intro");
+                $(".myHeader12").addClass("intro1");
+            });
+            $(".navbar-toggler").click(function(){
+                $(".container1").removeClass("intro");
+            });
+            $(".dropdown-toggle").click(function(){
+                $(".myHeader12").removeClass("intro1");
+            });
+            $(".myHeader2").click(function(){
+                $(".myHeader12").addClass("intro1");
+                $(".container1").addClass("intro");
+            });
+
+            $("#myprj").click(function(){
+                if (!$( ".container1" ).hasClass( "intro" )) {
+                  $(".container1").addClass("intro");
+                }
+            });
+            $("#myprj").click(function(){
+                if (!$( ".myHeader12" ).hasClass( "intro1" )) {
+                  $(".myHeader12").addClass("intro1");
+                }
+            });
+            $("footer").click(function(){
+                if (!$( ".container1" ).hasClass( "intro" )) {
+                  $(".container1").addClass("intro");
+                }
+            });
+            $("footer").click(function(){
+                if (!$( ".myHeader12" ).hasClass( "intro1" )) {
+                  $(".myHeader12").addClass("intro1");
+                }
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+  <!--Navbar-->
+  <nav class="navbar navbar-dark mdb-color navbar-fixed-top">
+    <!--Navbar Brand-->
+    <a class="navbar-brand" href="#"><img src="images/logo.png"></a>
+    <!-- Collapse button-->
+    <button class="navbar-toggler hidden-md-up">
+      <i class="fa fa-bars"></i>
+    </button>
+
+    <div class="container1 intro">
+      <!--Collapse content-->
+      <div class="navbar-toggleable-sm navbar-right">
+        <!--Links-->
+        <ul class="nav navbar-nav navbar-right mdb-color">
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewhome">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewsports">Sports</a>
+          </li>
+          <li class="nav-item">
+              <a class="btn teal darken-3 nav-link dropdown-toggle" style="width: 85px;">
+                Clubs
+              </a>
+              <div class="myHeader12 intro1">
+                <a class="myHeader2 dropdown-item" href="#viewadventureclub">Adventure Club</a>
+                <a class="myHeader2 dropdown-item" href="#viewchessclub">Chess club</a>
+                <a class="myHeader2 dropdown-item" href="#viewskatingclub">skating club</a>
+                <a class="myHeader2 dropdown-item" href="#viewtaekwondoclub">Taekwondo club</a>
+                <a class="myHeader2 dropdown-item" href="#viewcardclub">Card&Board games</a>
+                <a class="myHeader2 dropdown-item" href="#viewshootingclub">Shooting</a>
+                <a class="myHeader2 dropdown-item" href="#viewboxingclub">Boxing</a>
+              </div>
+          </li>
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewevents">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewgallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewawards">Awards</a>
+          </li>
+          <li class="nav-item">
+            <a class="myHeader nav-link btn teal darken-3" href="#viewcontactus">Contact us</a>
+          </li>
+        </ul>
+      </div>
+      <!--/.Collapse content-->
+    </div>
+  </nav>
+  <!--/.Navbar-->
+
+  <!--/.main content-->
+  <div ng-view id="myprj"></div>
+
+  <!--Footer-->
+  <footer id="footer" class="page-footer center-on-small-only mdb-color">
+    <!--Footer Links-->
+    <div class="container-fluid">
+      <div class="row">
+        <!--First column-->
+        <div class="col-md-5 col-md-offset-1">
+          <!--<p>For Query</p> -->
+            <!-- model content -->
+                <form class="contact" action="contact.php">
+                       <div class="modal-body">
+                         <ul>
+                            <li>Name: <input type="text" name="name" placeholder="Your name here"></li>
+                            <li>Email: <input type="text" name="email" placeholder="Your email here"></li>
+                            <li>Message: <textarea name="message" rows="3" placeholder="say something!!">
+                            </textarea></li>
+                            <li><button class="btn btn-success" id="submit">submit</button></li>
+                          </ul> 
+                      </div>
+                </form>
+        </div>
+        <!--/.First column-->
+        <hr class="hidden-md-up">
+        <!--Second column-->
+        <div class="col-md-2 col-md-offset-0">
+          <p class="column-title white-text">USEFUL LINKS</p>
+          <ul>
+            <li><a href="#" data-toggle="modal" data-target="#contactForm">Contact us</a></li>
+            <li><a href="#">calender</a></li>
+            <li><a href="#">Browsers and devices</a></li>
+          </ul>
+        </div>
+        <!--/.Second column-->
+        <hr class="hidden-md-up">
+        <!--Third column-->
+        <div class="col-md-2 col-md-offset-1">
+          <p class="column-title white-text">CONTACT US</p>
+          <ul>
+            <li>General Secratry</li>
+            <li>Games and sports IITK</li>
+            <li>sportsecy@iitk.ac.in</li>
+            <li>+91-8953440631</li>
+          </ul>
+        </div>
+        <!--/.Third column-->
+      </div>
+    </div>
+    <!--/.Footer Links-->
+    <hr>
+    <!--Social buttons-->
+    <div class="social-section">
+      <ul>
+        <li><a href="https://www.facebook.com/sports.iitk/?fref=ts" class="btn btn-fb blue darken-4"><i class="fa fa-facebook left "></i> Facebook</a></li>
+        <li><a href="https://twitter.com/MDBootstrap" class="btn btn-tw  teal darken-4"><i class="fa fa-instagram left"></i> Instagram</a></li>
+        <li><a href="https://www.youtube.com/channel/UC_DYfHIfAlTH3ECXXCGo_9g" class="btn btn-gplus pink darken-4"><i class="fa fa-youtube left"></i> You Tube</a></li>
+      </ul>
+    </div>
+    <!--/.Social buttons-->
+    <!--Copyright-->
+    <div class="footer-copyright">
+      <div class="container-fluid">
+        © 2016 Copyright: <a href="https://www.facebook.com/kumar.khemraj.7" target="blank">khemraj.com</a>
+      </div>
+    </div>
+    <!--/.Copyright-->
+  </footer>
+  <!--/.Footer-->
+
+  <!-- SCRIPTS -->
+  <script type="text/ng-template" id="viewhome.htm">
+    <!--Carousel Wrapper-->
+    <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+      <!--Indicators-->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-1" data-slide-to="1"></li>
+        <li data-target="#carousel-example-1" data-slide-to="2"></li>
+      </ol>
+      <!--/.Indicators-->
+      <!--Slides-->
+      <div class="carousel-inner" role="listbox">
+        <!--First slide-->
+        <div class="carousel-item active">
+          <img src="images/front1.jpg">
+        </div>
+        <!--/First slide-->
+        <!--Second slide-->
+        <div class="carousel-item">
+          <img src="images/front2.jpg">
+        </div>
+        <!--/Second slide-->
+        <!--Third slide-->
+        <div class="carousel-item">
+          <img src="images/front3.jpg">
+        </div>
+        <!--/Third slide-->
+      </div>
+      <!--/.Slides-->
+      <!--Controls-->
+      <a class="left carousel-control" href="#carousel-example-1" role="button" data-slide="prev">
+        <span class="icon-prev" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-1" role="button" data-slide="next">
+        <span class="icon-next" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+      <!--/.Controls-->
+    </div>
+    <!--/.Carousel Wrapper-->
+
+    <div class="divider-new" style="width:85%; margin:auto;">***</div>
+    <div class="row news" id="homestyles">
+      <!--Panel-->
+      <div class="card text-xs-center col-md-5 col-md-offset-1">
+        <div class="card-header pink darken-2">
+          About
+        </div>
+        <div class="card-block">
+          <p class="card-text">The voice of the IIT Kanpur sports community, responsible for management and conduction of all sporting events in the campus. This website is a forum for sharing of news, achievements and experiences! A legacy of a determined struggle and expression
+            of selfless passion ! </p>
+          <p class="card-text">Since establisment in 1962, we have worked to promote more and more sports in the campus. We've come a long way, and have a lot further to go.!</p>
+        </div>
+      </div>
+      <div class="card text-xs-center col-md-5">
+        <div class="card-header purple darken-2">
+          Latest-News
+        </div>
+        <div class="card-block">
+          <p class="card-text">Fresher's Inferno</p>
+          <p class="card-text">Inter IIT Sport's Meet</p>
+          <p class="card-text">Rio Olympics</p>
+          <p class="card-text">Inter IIT Sport's Meet board meeting</p>
+        </div>
+      </div>
+      <!--/.Panel-->
+    </div>
+  </script>
+
+
+  <script type="text/ng-template" id="viewsports.htm">
+    <div ng-controller="viewsportsController as menuCtrl">
+      <div class="row" id="sportsstyles">
+        <ul>
+          <li ng-repeat="(id,sport) in menuCtrl.sports">
+            <div class="col-sm-4 col-sm-offset-0 col-md-3 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                <a type="button" class="btn btn-lg" ng-click="showPopover(sport.mynumber)">
+                  <div class="view overlay hm-zoom">
+                    <img ng-src={{sport.image}} class="img-responsive" alt="img">
+                    <div class="mask flex-center">
+                      <p class="white-text">{{sport.name}}</p>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{sport.mynumber}}">
+              <div class="modal-header">
+                <button type="button" class="close" ng-click="hidePopover(sport.mynumber)">&times;</button>
+                <h4 class="modal-title flex-center">{{sport.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <div class="row">
+                  <div class="card-panel col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-xs-center">
+                        About
+                      </div>
+                      <div class="card-block">
+                        <p class="card-text">{{sport.about1}}</p>
+                        <p class="card-text">{{sport.about2}}</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="card-panel col-lg-12 col-md-12 col-sm-12">
+                    <div class="card">
+                      <div class="card-header text-xs-center">
+                        Facilities
+                      </div>
+                      <div class="card-block">
+                        <p class="card-text">{{sport.facilities1}}</p>
+                        <p class="card-text">{{sport.facilities2}}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="modal-body">
+                  <!--<div class="gallery">
+                    <div class="view overlay ">
+                      <a href="{{sport.url}}"> <img ng-src="{{sport.image}}" style="padding: 2% 9%;" class="img-responsive" alt="">
+                        <div class="mask">
+                          <div class="verticalcenter">
+                              <p class="white-text text-center">More Images</p>
+                          </div>
+                        </div>
+                      </a>
+                    </div>
+                    </div>-->
+
+                   <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+                    <h3>Captains</h3></div>
+                    <div>
+                      <table style="width:80%; margin:auto;">
+                        <tr>
+                          <td></td>
+                          <td><b>Name</b></td>
+                          <td><b>Mobile No.</b></td>
+                        </tr>
+                        <tr>
+                          <td><img ng-src="{{sport.imageb}}" style="width: 80px; height:100px; background-size: cover; padding-bottom: 20px; "></td>
+                          <td>{{sport.nameb}}</td>
+                          <td>{{sport.mobilenob}}</td>
+                        </tr>
+                        <tr ng-show="{{sport.emailg}}">
+                          <td><img ng-src="{{sport.imageg}}" style="width: 80px; height:100px; background-size: cover; padding-bottom: 20px; "></td>
+                          <td>{{sport.nameg}}</td>
+                          <td>{{sport.mobilenog}}</td>
+                        </tr>
+                      </table>
+                    </div>
+              </div>
+              <div class="modal-footer">
+                <a href="{{sport.url}}" class="btn btn-primary">Gallery</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewevents.htm">
+    <div ng-controller="vieweventsController as menuCtrl">
+      <div class="row" id="eventstyles">
+        <ul>
+          <li ng-repeat="(id,event) in menuCtrl.events">
+            <div class="col-sm-4 col-sm-offset-0 col-md-3 col-md-offset-0 col-xs-6 col-xs-offset-0">
+                <a type="button" class="btn btn-lg" ng-click="showPopover(event.mynumber)">
+                  <div class="view overlay hm-zoom">
+                    <img ng-src={{event.image}} class="img-responsive" alt="img">
+                    <div class="mask flex-center">
+                      <p class="white-text">{{event.name}}</p>
+                    </div>
+                  </div>
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{event.mynumber}}">
+              <div class="modal-header">
+                <button type="button" class="close" ng-click="hidePopover(event.mynumber)">&times;</button>
+                <h4 class="modal-title flex-center">{{event.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <p>{{event.description1}}</p>
+                <p>{{event.description2}}</p>
+              </div>
+              <div class="modal-footer">
+                <a href="{{event.galleryurl}}" class="btn btn-primary">Gallery</a>
+                <a href="{{event.url}}" class="btn btn-primary">Visit</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallery.htm">
+    <div ng-controller="viewgalleryController as menuCtrl">
+      <div class="row" id="gallerystyle">
+        <ul>
+          <li ng-repeat="gallery in menuCtrl.gallerys">
+            <a type="button" class="btn btn-lg waves-effect waves-light" href="{{gallery.url}}">
+              <div class="view overlay hm-zoom">
+                <img ng-src={{gallery.image}} class="img-responsive" alt="img">
+                <div class="mask flex-center">
+                  <p class="white-text">{{gallery.name}}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewawards.htm">
+    <div ng-controller="viewawardsController as menuCtrl">
+      <ul>
+        <li ng-repeat="award in menuCtrl.awards">
+          <div id="awardstyle" class="card text-xs-center">
+            <div class="card-header  default-color-dark">
+              {{award.heading}}
+            </div>
+            <div class="card-block">
+              <p class="card-text">{{award.description}}</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewcontactus.htm">
+    <div class="row" id="contactus">
+      <div class="divider-new" style=" margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">General Secretary</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 60%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/robinson.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Robinson Guria</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> rguria@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 8953440631</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">Deputy Contingent Leaders</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/shubham.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Shubham Bothra</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> sbothra@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7755839801</p>
+            </div>
+          </div>
+        </div>
+        <!--second-->
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/sonal.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Sonal Yadav</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> sonal@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7752846381</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">Council Executives</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/abhijeet.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Abhijeet Singh</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> abhisin@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7054353672</p>
+            </div>
+          </div>
+        </div>
+        <!--second-->
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/tizil.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Tizil Saini</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> tizil@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7755047919</p>
+            </div>
+          </div>
+        </div>
+        <!--first-->
+        <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/deepak.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Deepak Jorwal</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> jorwald@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 9151225315</p>
+            </div>
+          </div>
+        </div>
+        <!--second-->
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/nikhil.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Nikhil Bansal</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> nikban@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7755057753</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">Web Executives</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/khemraj.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Khem Raj Meena</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> khemraj@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 7755058011</p>
+            </div>
+          </div>
+        </div>
+        <!--second-->
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/rajkumar.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Raj Kumar</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> rajmeena@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 8960620407</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">Finance Executives</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 60%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/sagar.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Sagar Yadav</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> sagary@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 9050904544</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h4 class="h4-responsive">Design Executives</h4></div>
+      <div class="row">
+        <!--first-->
+        <div class="col-md-3 col-md-offset-3 col-sm-4 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/priyanka.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Priyanka Bharti</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> bhartipr@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 8174833965</p>
+            </div>
+          </div>
+        </div>
+        <!--second-->
+        <div class="col-md-3 col-md-offset-0 col-sm-4 col-sm-offset-0 col-xs-8 col-xs-offset-2">
+          <div class="testimonial-card z-depth-1" style="width: 80%;">
+            <div class="card-up default-color-dark">
+            </div>
+            <div class="avatar"><img src="images/contact-images/zishan.jpg" class="img-circle img-responsive">
+            </div>
+            <div class="card-content">
+              <h5 class="h5-responsive">Zishan Zainul</h5>
+              <p class="flow-text"><i class="fa fa-envelope"> </i> zishan@iitk.ac.in</p>
+              <p class="flow-text"><i class="fa fa-phone"> </i> 8960621328</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--end main content-->
+  </script>
+
+  <!--script for subclubs file -->
+  <script type="text/ng-template" id="viewadventureclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-3">
+        Adventure Club
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/adventure1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/adventure2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/adventure3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text">Adventure Sports Club @ IIT Kanpur is the forum for adventure enthusiasts, trekkers, climbers and armchair mountaineers in the student community. The work to develop the spirit of adventure in IITians. Activities we organize:</p>
+          <p class="flow-text">Trekking</p>
+          <p class="flow-text">Mountain biking</p>
+          <p class="flow-text">Wall climbing</p>
+          <p class="flow-text">As it is true for any sports physical fitness is of prime importance. So the club organizes conditioning camp of around 40 days which takes place in morning and after trial and error it was found that the early morning time was best suited for
+            it. It also helps the individual increase his will power to forgo the pleasure of early morning sleep that is big plus on the expedition as it is always advisable to start early. More emphasis is placed on completing the course of the exercises
+            than just becoming super athlete. The training schedule would ensure that the individual for the activity attains the minimum requirement.</p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text">Given BY mail</p>
+          <p class="flow-text"><b>Trekking</b></p>
+          <p class="flow-text">Trekking is organized in each semester mid semester recess in Himalayas. A conditioning camp of 40 days is organized before treks to attain the minimum requirement. </p>
+          <p class="flow-text"><b>Mountain Biking</b></p>
+          <p class="flow-text">Mountain Biking is organized in even semester mid semester recess. A conditioning camp will also be organized before this trip.</p>
+          <p class="flow-text"><b>Wall climbing</b></p>
+          <p class="flow-text">For wall climbing just come on the wall with shoes on.</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewchessclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header  red accent-4">
+        Chess Club
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/chess1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/chess2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/chess3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text"><b>Vision of the club: </b> The primary motto of the club is to popularize chess as a hobby among the campus residents. This club is not only for regular players but for beginners too. We have everything you need it just requires your enthusiasm.
+            Learn to be better if you are good and best if better. There is a famous saying by a chess author Irving Chernev, “Every chess master was once a beginner.” Activities we do at the club: We regularly play chess (Blitz, Bullet, Rapid & Long)
+            at chess clubs and do activities like training with senior IITK students, puzzle solving sessions, opening and end game analysis and tactical trainings. We also organize workshop(s) on chess by some rated professional player. We also conduct
+            various tournaments like fresher’s tournament, antichess tournaments, puzzle solving tournaments and selection rounds for various inter-college level sport fests like Udghosh etc. </p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text">We have activities almost every regular weekend in Hall 2 mess (generally) from 9:30-11:30 PM.</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewskatingclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-2">
+        skating Club
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/skating1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/skating2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/skating3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text">We provide an opportunity to all those who are interested in improving their skating skills or want to learn how to skate. For those who want even more, we have some activities in our club like Roller hockey and skate boarding. Activities –
+            We have been organizing the basic workshop for teaching skates on a regular basis. For which one has to register in advance. The next workshop open for all will be organized on 7-9 Feb and 7-9 March. Also we have a Skating week in which there
+            is no registration required and it lasts for a week and is hall wise. This semester till now, many activities have been done under the club, which includes roller hockey practice session which was open for everyone. We are about to start a
+            exclusive Skate boarding session soon. This time in Josh two events related to skating were introduced namely Roller hockey and Speed skating. Anyone is invited to join us in the practice sessions whenever they see us practicing in the rink.
+            Most of the times we get new members from the organized workshops . We mail about the practicing sessions to all those who have even the slightest interest in skating. </p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text"><b> Roller Hockey:</b >We practice roller hockey thrice in a week and on one of the day i.e Friday(6:30-8:30) the practice session is open for everybody. </p>
+          <p class="flow-text"><b>General Practice:</b> A general skating improvement session is held on Saturday(6:30-8:30)) every weekend both for club members and those who are interested.</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewtaekwondoclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-2">
+        Taekwondo Club
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/tea1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/tea2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/tea3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text">The aim of TKD club is to develop and continually maintain a well-rounded planned series of future events and provide the finest quality in martial art in family-oriented environment to show their skills beyond the classroom. Our main focus
+            is to provide a best physical fitness, competitive atmosphere to absorbed as a sport and self-defence specific skill which may come handy at the time of trouble.</p>
+          <p class="flow-text"><b>Activities :-</b></p>
+          <p class="flow-text">Regular Exercise</p>
+          <p class="flow-text">Self Defence</p>
+          <p class="flow-text">Self defence workshop</p>
+          <p class="flow-text">Summer & Winter Camp</p>
+          <p class="flow-text">Practice for Different Competition Like – Josh , District, State & National Championship</p>
+          <p class="flow-text">Belt Promotion Test</p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text">Venue:- Taekwondo Arena,Main Stadium (far right corner of the Stadium). </p>
+          <p class="flow-text">Timing:-</p>
+          <p class="flow-text">Schedule - 6:00 pm to 7:30 pm</p>
+          <p class="flow-text">Exercises - 6:00 pm to 7:30 pm</p>
+          <p class="flow-text">Taekawondo practice(Monday to Saturday ) - 6:30 pm to 7:30 pm</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewcardclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-2">
+        Card&Board Games
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/card1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/card2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/card3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text">The card and board games hobby group hopes to meet at least twice a week. Each meeting shall showcase one game. This game shall be taught in detail to all newcomers. In addition, every game will be available for attendees to play. Additionally,
+            the card and board games hobby group plans to add a facility to borrow games by leaving their ID card. The hobby group plans to hold a board games week with a board games tournament once every semester, with refreshments, a wide variety of
+            games, and prize money, if possible. Current Activities: The card and board games hobby group meets nearly every Monday from 8pm till Midnight (and sometimes beyond) at the Games and Sports Council Room. Time permitting, the hobby group also
+            meets on Thursday at the same time. All the games are played, and there is always a good turnout, with fresh faces every meeting. The borrowing facility has not been implemented as yet. A board games meet is scheduled for the week after the
+            first mid-semester examinations .</p>
+          <p class="flow-text"><b>The games the hobby group has as of now are:</b></p>
+          <p class="flow-text">Othello</p>
+          <p class="flow-text">Scotland Yard</p>
+          <p class="flow-text">Deal Street</p>
+          <p class="flow-text">Playing Cards</p>
+          <p class="flow-text">Go</p>
+          <p class="flow-text">Abalone</p>
+          <p class="flow-text"><b>Games in the pipeline, to be bought include:</b></p>
+          <p class="flow-text">Battleship</p>
+          <p class="flow-text">UNO cards</p>
+          <p class="flow-text">Stratego</p>
+          <p class="flow-text">Cluedo</p>
+          <p class="flow-text">Jenga</p>
+          <p class="flow-text">The Game of Life</p>
+          <p class="flow-text">(these games were selected through a survey among the students)</p>
+          <p class="flow-text"><b>Participation:</b>The hobby group sends out a mail on the students list a day before every meeting. So far, every meeting has had attendance of 15-20 people. There is generally a group of new players in each meeting. There are some regular
+            attendees.</p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text">Timing:- Any time after 8:00 pm</p>
+          <p class="flow-text">Venue:- New SAC(Student Activity Center)</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewboxingclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-2">
+        Boxing Hobby Group
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/boxing1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/boxing2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/boxing3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text"><b>General health and athletic conditioning:</b> The one most obvious benefit of boxing is that it’s a great form of cardiovascular exercise. It improves stamina to a great extent and helps burning body fat, thus lending you a lean, fit body
+            naturally. Cardio kick boxing workouts allow you to burn out 350 to 500 calories in just an hour. Moreover, boxing drills help improve reflexes and strength.</p>
+          <p class="flow-text"><b>Focus:</b> Boxing isn’t as much a sport of power as it is of tactics. Knowing when and where to strike often overcomes any lack of physical prowess. You learn how to fix your eyes on a moving target, which combination of punches to go for,
+            all the while trying to evade strikes from the opponent. Sometimes, you have to be patient, gauge the opponent acutely, lure him into making a mistake, and then hit him on the counter. At times, boxing becomes a game of chess-albeit a more
+            physically demanding one.</p>
+          <p class="flow-text"><b>Rage and Serenity:</b> It’s fun to hit the heavy bag as hard as you can. But boxing isn’t a show of strength. Many a time, it’s important to throw lighter, quicker punches, because the harder you punch, the faster you’ll be fatigued. At times,
+            boxing is about curbing the urge to go all out, and thinking smart. Thus, you learn to tame your mind to your will. You learn to achieve the point between rage and serenity.</p>
+          <p class="flow-text">Timing:- Will be mailed</p>
+          <p class="flow-text">Venue:- Old Sports Complex</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewshootingclub.htm">
+    <div id="clubstyle" class="card text-xs-center">
+      <div class="card-header   red accent-2">
+        Shooting Hobby Group
+      </div>
+      <div class="card-block">
+        <!--Carousel Wrapper-->
+        <div id="carousel-example-1" class="carousel slide carousel-fade" data-ride="carousel">
+          <!--Indicators-->
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-1" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-1" data-slide-to="1"></li>
+            <li data-target="#carousel-example-1" data-slide-to="2"></li>
+          </ol>
+          <!--/.Indicators-->
+          <!--Slides-->
+          <div class="carousel-inner" role="listbox">
+            <!--First slide-->
+            <div class="carousel-item active">
+              <img src="images/clubs-images/Shooting1.jpg">
+            </div>
+            <!--/First slide-->
+            <!--Second slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/Shooting2.jpg">
+            </div>
+            <!--/Second slide-->
+            <!--Third slide-->
+            <div class="carousel-item">
+              <img src="images/clubs-images/Shooting3.jpg">
+            </div>
+            <!--/Third slide-->
+          </div>
+          <!--/.Slides-->
+        </div>
+        <!--Carousel Wrapper-->
+        <div class="divider-new">
+          <h4 class="h4-responsive"><b>About</b></h4></div>
+        <div class="card-content" style="width:85%; margin:auto;">
+          <p class="flow-text">Shooting originated as a means of survival, and it was practiced in order to hunt. After the Industrial revolution shooting evolved into an elite sport. It is predominantly a skill-based sport where consistency, accuracy, and concentration are
+            key features over one particular body type. There are 3 categories in shooting sports:</p>
+          <p class="flow-text"><b>PISTOL</b> are short firearms held with one unsupported hand in a standing position. Different pistols used for different events e.g. air pistols that use compressed air to discharge lead pellets, rapid fire pistols in which 5 pellets are
+            shot in quick succession and traditional or free pistols which shoot one pellet at a time.</p>
+          <p class="flow-text"><b>RIFLES</b> are shoulder firearms. Air rifles use compressed air to discharge lead pellets, whilst traditional rifles use gun powder. Rifles are fired in either a prone, standing, or kneeling position depending on the event, and the “three
+            position” events incorporate all three.</p>
+          <p class="flow-text"><b>SHOTGUNS</b>are smooth-bore firearms fired from the shoulder, which project hundreds of small spherical pellets called a shot. Unlike pistol and rifle events, shotgun shooters use moving clay targets and are fired from the standing position.</p>
+          <p class="flow-text red-text">IIT KANPUR IS THE ONLY IIT TO FUEL SUCH FACILITY. </p>
+          <p class="flow-text"><b>Venue and Timing</b></p>
+          <p class="flow-text">Workshop is organised in every three weeks,information regarding venue will be mailed.</p>
+        </div>
+        <div class="divider-new" style="margin-top: 10px; margin-bottom: 10px;">
+        <h3>Contact Us</h3></div>
+        <div>
+          <table style="width:80%; margin:auto;">
+            <tr>
+              <td><b>Name</b></td>
+              <td><b>Mobile No.</b></td>
+              <td><b>Email</b></td>
+            </tr>
+            <tr>
+              <td>Khem raj meena</td>
+              <td>7755058011</td>
+              <td>khemraj@iitk.ac.in</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </script>
+
+<!--script for subgallery file -->
+  <script type="text/ng-template" id="viewgalleryaquatics.htm">
+    <div ng-controller="viewgalleryaquaticsController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+         <div class="card-header   red accent-2">
+       Aquatics
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryathletics.htm">
+    <div ng-controller="viewgalleryathleticsController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Athletics
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerybadminton.htm">
+    <div ng-controller="viewgallerybadmintonController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Badminton
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerybasketball.htm">
+    <div ng-controller="viewgallerybasketballController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Basketball
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerycricket.htm">
+    <div ng-controller="viewgallerycricketController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Cricket
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryfootball.htm">
+    <div ng-controller="viewgalleryfootballController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Football
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryhockey.htm">
+    <div ng-controller="viewgalleryhockeyController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Hockey
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerylawntennis.htm">
+    <div ng-controller="viewgallerylawntennisController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Lawntennis
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerysquash.htm">
+    <div ng-controller="viewgallerysquashController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Squash
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerytabletennis.htm">
+    <div ng-controller="viewgallerytabletennisController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Table-Tennis
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryvolleyball.htm">
+    <div ng-controller="viewgalleryvolleyballController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Volleyball
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryweightlifting.htm">
+    <div ng-controller="viewgalleryweightliftingController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Weightlifting
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryadventure.htm">
+    <div ng-controller="viewgalleryadventureController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Adventure
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerychess.htm">
+    <div ng-controller="viewgallerychessController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Chess
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryskating.htm">
+    <div ng-controller="viewgalleryskatingController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Skating
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryteakwondo.htm">
+    <div ng-controller="viewgalleryteakwondoController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Teakwondo
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerycard.htm">
+    <div ng-controller="viewgallerycardController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Card And Games
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+  <script type="text/ng-template" id="viewgalleryshooting.htm">
+    <div ng-controller="viewgalleryshootingController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Shooting
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryboxing.htm">
+    <div ng-controller="viewgalleryboxingController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Boxing
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryinteriit.htm">
+    <div ng-controller="viewgalleryinteriitController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Inter-IIT
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerygirlsaqua.htm">
+    <div ng-controller="viewgallerygirlsaquaController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Aqua Girl's
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryinferno.htm">
+    <div ng-controller="viewgalleryinfernoController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Inferno
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryjosh.htm">
+    <div ng-controller="viewgalleryjoshController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Josh
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryoneweak.htm">
+    <div ng-controller="viewgalleryoneweakController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        One Weak One Sports
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgallerytourde.htm">
+    <div ng-controller="viewgallerytourdeController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Tour De Force
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script type="text/ng-template" id="viewgalleryudghosh.htm">
+    <div ng-controller="viewgalleryudghoshController as menuCtrl">
+      <div class="row" id="subgallerystyle">
+        <div class="card-header   red accent-2">
+        Udghosh
+        </div>
+        <ul>
+          <li ng-repeat="(id,image) in menuCtrl.images">
+            <div class="galleryimage col-xs-4 col-sm-2 col-md-2 col-lg-2 col-xl-2">
+                <a type="button" ng-click="showPopover(image.mynumber)">
+                    <img ng-src={{image.url}} class="img-responsive" alt="img">
+                </a>
+            </div>
+            <div class="modal-content popover1" ng-show="popoverIsVisible{{image.mynumber}}">
+              <div class="modal-header" style="text-align:Center">
+                <a ng-click="showPopoverprev(image.mynumber)" class="btn btn-primary" style="float:left">prev</a>
+                <a ng-click="hidePopover(image.mynumber)" class="btn btn-primary">close</a>
+                <a ng-click="showPopovernext(image.mynumber)" class="btn btn-primary" style="float:right">next</a>
+                <h4 class="modal-title flex-center">{{image.name}}</h4>
+              </div>
+              <div class="modal-body">
+                <img ng-src={{image.url}} class="img-responsive" alt="img">
+              </div>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </script>
+
+  <script>
+     $(function() {
+    //twitter bootstrap script
+      $("button#submit").click(function(){
+              $.ajax({
+            type: "POST",
+        url: "process.php",
+        data: $('form.contact').serialize(),
+              success: function(msg){
+                      $("#thanks").html(msg); 
+                },
+        error: function(){
+          alert("failure");
+          }
+              });
+      });
+    });
+  </script>
+
+  <script type="text/javascript" src="js/main.js"></script>
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-2.2.3.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/tether.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+</body>
+</html>
